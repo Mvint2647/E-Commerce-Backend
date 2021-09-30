@@ -3,7 +3,7 @@ const { Product, Category, Tag, ProductTag } = require("../../models");
 
 // The `/api/products` endpoint
 router.get('/', (req, res) => {
-  product.findAll({
+  product.findOne({
     include: [Product],
 
 })
